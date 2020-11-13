@@ -11,10 +11,10 @@ export const App = () => {
   const [selectedDate, handleDateChange] = React.useState(new Date());
 
   return (
-    <MuiPickersUtilsProvider utils={LuxonUtils}>
+    <div>
       <DatePicker value={selectedDate} onChange={handleDateChange} />
       <TimePicker value={selectedDate} onChange={handleDateChange} />
       <DateTimePicker value={selectedDate} onChange={handleDateChange} />
-    </MuiPickersUtilsProvider>
+    </div>
   );
 };
