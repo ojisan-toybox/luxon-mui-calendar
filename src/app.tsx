@@ -1,11 +1,5 @@
 import * as React from "react";
-import LuxonUtils from "@date-io/luxon"; // choose your lib
-import {
-  DatePicker,
-  TimePicker,
-  DateTimePicker,
-  MuiPickersUtilsProvider,
-} from "@material-ui/pickers";
+import { DatePicker, TimePicker, DateTimePicker } from "@material-ui/pickers";
 
 export const App = () => {
   const [selectedDate, handleDateChange] = React.useState(new Date());
